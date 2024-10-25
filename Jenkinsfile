@@ -65,7 +65,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name drupal -p 8080:80 ${DOCKER_IMAGE_NAME}:latest'
+                sh 'docker run -d --name drupal -p 9080:8080 ${DOCKER_IMAGE_NAME}:latest'
             }
           } 
         } 
