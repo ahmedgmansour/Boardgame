@@ -30,7 +30,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'diamond', url: 'https://github.com/jaiswaladi246/Boardgame.git'
+                git branch: 'diamond', url: 'https://github.com/ahmedgmansour/Boardgame.git'
             }
         }
         stage('Compile') {
