@@ -1,11 +1,12 @@
 pipeline{
     agent any
-    environment {
-        DOCKER_IMAGE_NAME = "ahmedgmansour/boardgame"
+
     tools {
         jdk 'jdk17'
         maven 'maven3'
-    }
+    }   
+    environment {
+        DOCKER_IMAGE_NAME = "ahmedgmansour/boardgame"
     }
     stages {
         stage('init') {
